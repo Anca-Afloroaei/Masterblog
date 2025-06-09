@@ -115,6 +115,9 @@ def update(post_id):
 
 @app.route('/like/<int:post_id>')
 def like(post_id):
+    """
+    Like Route - allow the options to 'Like' a post and counts the number of 'Likes'
+    """
     blog_posts = load_posts()
 
     for post in blog_posts:
