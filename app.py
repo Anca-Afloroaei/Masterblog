@@ -113,6 +113,21 @@ def update(post_id):
     return render_template('update.html', post=post)
 
 
+@app.route('/like/<int:post_id>')
+def like(post_id):
+    blog_posts = load_posts()
+
+    for post in blog_posts:
+        if post['id'] == post_id:
+            post['likes'] = post.get('likes', 0) + 1
+            break
+
+    with open(DATA_FILE, "w", encoding="utf-8") as file:
+        json.dump(blog_posts, file, ensure_ascii=False, indent=4)
+
+    return redirect(url_for('index'))
+
+
 if __name__ == '__main__':
     """
     Running the app

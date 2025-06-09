@@ -3,24 +3,28 @@
         "id": 1,
         "author": "John Doe",
         "title": "First Post",
-        "content": "This is my first post."
+        "content": "This is my first post.",
+        "likes": 0
     },
     {
         "id": 3,
         "author": "Mike",
         "title": "Today",
-        "content": "Gratitude"
+        "content": "Gratitude",
+        "likes": 2
     },
     {
         "id": 4,
         "author": "Jake",
         "title": "Thoughts",
-        "content": "Awareness"
+        "content": "Awareness",
+        "likes": 1
     },
     {
         "id": 5,
         "author": "Anca",
         "title": "Reflections",
-        "content": "Mindfulness"
+        "content": "Mindfulness",
+        "likes": 3
     }
 ]
