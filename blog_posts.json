@@ -10,5 +10,17 @@
         "author": "Mike",
         "title": "Today",
         "content": "Gratitude"
+    },
+    {
+        "id": 4,
+        "author": "Jake",
+        "title": "Thoughts",
+        "content": "Awareness"
+    },
+    {
+        "id": 5,
+        "author": "Anca",
+        "title": "Reflections",
+        "content": "Mindfulness"
     }
 ]

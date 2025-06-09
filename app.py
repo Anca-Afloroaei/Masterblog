@@ -99,8 +99,16 @@ def update(post_id):
         return "Post not found", 404
 
     if request.method == 'POST':
-        # Will implement this part next
-        pass
+        if request.method == 'POST':
+            post['author'] = request.form.get('author')
+            post['title'] = request.form.get('title')
+            post['content'] = request.form.get('content')
+
+            # Save the updated posts list
+            with open(DATA_FILE, "w", encoding="utf-8") as file:
+                json.dump(blog_posts, file, ensure_ascii=False, indent=4)
+
+            return redirect(url_for('index'))
 
     return render_template('update.html', post=post)
 
